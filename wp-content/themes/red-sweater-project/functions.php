@@ -17,6 +17,8 @@ function rsp_theme_js() {
 
   wp_enqueue_script( 'typekit_fonts', "https://use.typekit.net/rbv5wsv.js", '', '', false);
 
+  wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/scripts.js', array('jquery', 'typekit_fonts', 'bootstrap_js'), '', false);
+
 }
 add_action( 'wp_enqueue_scripts', 'rsp_theme_js' );
 
