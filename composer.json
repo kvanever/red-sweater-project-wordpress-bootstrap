@@ -6,6 +6,6 @@
 		}
 	],
 	"require": {
-		
+		"wpackagist-plugin/svg-support":"*"
 	}
 }
