@@ -1,5 +1,17 @@
 <?php
 
+add_theme_support( 'menus' );
+
+function register_theme_menus() {
+
+  register_nav_menus(
+    array(
+      'main-navigation' => __('Main Navigation')
+    )
+  );
+}
+add_action( 'init', 'register_theme_menus');
+
 function rsp_theme_styles() {
 
   wp_enqueue_style( 'bootstrap_css', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
