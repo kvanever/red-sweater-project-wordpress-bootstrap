@@ -11,7 +11,7 @@
     <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-left">
         <div class="container-fluid">
-          <a href="#"><img class="nav-logo" src="../wordpress/wp-content/uploads/2016/08/logo_horiz_redG.svg" alt="Red Sweater Project logo" /></a>
+          <a href="<?php bloginfo( 'url' ); ?>"><img class="nav-logo" src="../wordpress/wp-content/uploads/2016/08/logo_horiz_redG.svg" alt="Red Sweater Project logo" /></a>
         </div>
       </div>
       <div class="pull-right">
@@ -19,12 +19,11 @@
 
           <?php
 
-            $defaults = array(
-              'container' => 'div',
-              'container-class' => 'container-fluid',
-              'theme-location' => 'main-navigation',
-              'menu-class' => 'nav navbar-nav hidden-xs'
-            );
+          $defaults = array(
+            'menu' => 'main-navigation',
+            'container' => 'false',
+            'menu_class' => 'nav navbar-nav hidden-xs'
+          );
 
             wp_nav_menu( $defaults );
 
