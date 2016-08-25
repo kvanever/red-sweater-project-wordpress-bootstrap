@@ -39,24 +39,24 @@
 
 
     <nav id="sub-navigation">
-      <img class="arrow" src="/images/triangle.svg" alt="black arrow" />
+      <img class="arrow" src="../wordpress/wp-content/uploads/2016/08/triangle.svg" alt="black arrow" />
       <i class="close-menu">X</i>
-      <div class="sub-navigation__container">
+      <div class="row">
         <?php
 
         $defaults = array(
           'menu' => 'collapse-navigation',
           'container' => 'false',
-          'menu_class' => 'col-md-offset-2 col-md-8 col-sm-12'
+          'menu_class' => 'col-md-offset-2 col-md-8'
         );
 
           wp_nav_menu( $defaults );
 
          ?>
-        <!-- <h2>Contact</h2>
+        <h2>Contact</h2>
         <div class="contact-form">
           <i class="white-triangle">
-            <img src="/images/white-triangle.svg" alt="white triangle" />
+            <img src="../wordpress/wp-content/uploads/2016/08/white-triangle.svg" alt="white triangle" />
           </i>
           <form>
             <label for="name">Your name</label>
@@ -66,6 +66,7 @@
             <label for="comments">Comments</label>
             <textarea name="comments"></textarea>
             <button id="contact-form-submit-button" type="submit" name="button">Send</button>
-          </form> -->
+          </form>
+        </div>
       </div>
     </nav>
