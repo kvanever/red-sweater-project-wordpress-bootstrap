@@ -6,7 +6,8 @@ function register_theme_menus() {
 
   register_nav_menus(
     array(
-      'main-navigation' => __('Main Navigation')
+      'main-navigation' => __('Main Navigation'),
+      'collapse-navigation' => _('Collapse Navigation')
     )
   );
 }

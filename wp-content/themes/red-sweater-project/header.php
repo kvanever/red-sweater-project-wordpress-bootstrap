@@ -16,27 +16,56 @@
       </div>
       <div class="pull-right">
 
+        <?php
 
-          <?php
+        $defaults = array(
+          'menu' => 'main-navigation',
+          'container' => 'false',
+          'menu_class' => 'nav navbar-nav hidden-xs'
+        );
 
-          $defaults = array(
-            'menu' => 'main-navigation',
-            'container' => 'false',
-            'menu_class' => 'nav navbar-nav hidden-xs'
-          );
+          wp_nav_menu( $defaults );
 
-            wp_nav_menu( $defaults );
+         ?>
 
-           ?>
-          <!-- <ul class="nav navbar-nav hidden-xs">
-            <li><a href="/who-we-are/the-red-sweater">Who We Are</a></li>
-            <li><a href="/what-we-do/the-school">What We Do</a></li>
-            <li><a href="/get-involved/donate">Get Involved</a></li>
-            <li><a href="/sponsor/sponsor-a-student">Sponsor</a></li>
-          </ul> -->
-          <a href="/donate" class="navbar-text donate">Donate</a>
-          <div class="navbar-text">
-            <img class="subnav-toggle" src="../wordpress/wp-content/uploads/2016/08/menu_icon.svg" alt="menu icon" />
-          </div>
+        <a href="/donate" class="navbar-text donate">Donate</a>
+        <div class="navbar-text">
+          <img class="subnav-toggle" src="../wordpress/wp-content/uploads/2016/08/menu_icon.svg" alt="menu icon" />
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <nav id="sub-navigation">
+      <img class="arrow" src="/images/triangle.svg" alt="black arrow" />
+      <i class="close-menu">X</i>
+      <div class="sub-navigation__container">
+        <?php
+
+        $defaults = array(
+          'menu' => 'collapse-navigation',
+          'container' => 'false',
+          'menu_class' => 'col-md-offset-2 col-md-8 col-sm-12'
+        );
+
+          wp_nav_menu( $defaults );
+
+         ?>
+        <!-- <h2>Contact</h2>
+        <div class="contact-form">
+          <i class="white-triangle">
+            <img src="/images/white-triangle.svg" alt="white triangle" />
+          </i>
+          <form>
+            <label for="name">Your name</label>
+            <input type="text" name="name">
+            <label for="email">Email address</label>
+            <input type="text" name="email">
+            <label for="comments">Comments</label>
+            <textarea name="comments"></textarea>
+            <button id="contact-form-submit-button" type="submit" name="button">Send</button>
+          </form> -->
       </div>
     </nav>
