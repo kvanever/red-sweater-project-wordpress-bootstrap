@@ -7,7 +7,8 @@ function register_theme_menus() {
   register_nav_menus(
     array(
       'main-navigation' => __('Main Navigation'),
-      'collapse-navigation' => _('Collapse Navigation')
+      'collapse-navigation' => __('Collapse Navigation'),
+      'footer-menu' => __('Footer Menu')
     )
   );
 }
@@ -15,7 +16,7 @@ add_action( 'init', 'register_theme_menus');
 
 function rsp_theme_styles() {
 
-  wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
+  wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap-styles.css' );
 
   wp_enqueue_style( 'google_fonts', "https://fonts.googleapis.com/css?family=Amatic+SC:700|Source+Sans+Pro:400,300,400italic,300italic,700,600,600italic,700italic,900)");
 

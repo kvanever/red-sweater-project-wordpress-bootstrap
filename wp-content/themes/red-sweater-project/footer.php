@@ -10,7 +10,17 @@
     </div>
     <div class="col-md-3 col-sm-4">
       <nav>
+        <?php
 
+        $defaults = array(
+          'menu' => 'footer-menu',
+          'container' => 'false',
+          'menu_class' => 'footer-menu'
+        );
+
+          wp_nav_menu( $defaults );
+
+         ?>
       </nav>
     </div>
     <div class="col-md-offset-3 col-md-3 col-sm-offset-2 col-sm-2">
