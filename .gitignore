@@ -80,8 +80,8 @@ Thumbs.db
 
 ## ignore compiled css
 
-css/bootstrap-styles.css
-css/bootstrap-styles.css.map
+wp-content/themes/red-sweater-project/css/bootstrap-styles.css
+wp-content/themes/red-sweater-project/css/bootstrap-styles.css.map
 
 # -------------------------
 # BEGIN Whitelisted Files
