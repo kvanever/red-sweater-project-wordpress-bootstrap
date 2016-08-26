@@ -78,6 +78,11 @@ Thumbs.db
 *.tar
 *.zip
 
+## ignore compiled css
+
+css/bootstrap-styles.css
+css/bootstrap-styles.css.map
+
 # -------------------------
 # BEGIN Whitelisted Files
 # -------------------------
