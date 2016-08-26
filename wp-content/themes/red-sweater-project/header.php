@@ -10,11 +10,11 @@
   <body>
     <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-left">
-        <div class="container-fluid">
-          <a href="<?php bloginfo( 'url' ); ?>"><img class="nav-logo" src="../wordpress/wp-content/uploads/2016/08/logo_horiz_redG.svg" alt="Red Sweater Project logo" /></a>
-        </div>
+        <a href="<?php bloginfo( 'url' ); ?>">
+          <img class="nav-logo" src="../wordpress/wp-content/uploads/2016/08/logo_horiz_redG.svg" alt="Red Sweater Project logo" />
+        </a>
       </div>
-      <div class="pull-right">
+      <div class="navbar-right">
 
         <?php
 
@@ -29,7 +29,7 @@
          ?>
 
         <a href="/donate" class="navbar-text donate">Donate</a>
-        <div class="navbar-text">
+        <div class="navbar-text menu-toggle">
           <img class="subnav-toggle" src="../wordpress/wp-content/uploads/2016/08/menu_icon.svg" alt="menu icon" />
         </div>
       </div>
