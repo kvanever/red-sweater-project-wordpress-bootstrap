@@ -6,14 +6,26 @@
     margin: 20px
     float: left
   .navbar-right
+    a
+      padding: 0
+      margin: 20px
     float: right
-  .navbar-text
-    float: left
-  .donate
-    padding: 2px 17px
-    border-radius: $border-radius-base
-    background-color: $brand-danger
-    color: white
-    margin: 20px 10px
-  .menu-toggle
-    margin: 20px
+    .navbar-text
+      float: left
+    .donate
+      padding: 2px 17px
+      border-radius: $border-radius-base
+      background-color: $brand-danger
+      color: white
+      margin: 20px 10px
+    .menu-toggle
+      margin: 20px
+    .current-menu-item
+      a
+        color: $brand-danger
+        border-bottom: 3px solid $brand-danger
+        @media (min-width: 992px)
+          padding-top: 20px
+          margin-top: 0
+          border-bottom: none
+          border-top: 2px solid $brand-danger

@@ -11,7 +11,7 @@
     <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-left">
         <a href="<?php bloginfo( 'url' ); ?>">
-          <img class="nav-logo" src="../wordpress/wp-content/uploads/2016/08/logo_horiz_redG.svg" alt="Red Sweater Project logo" />
+          <img class="nav-logo" src="<?php bloginfo( 'url' ); ?>/wp-content/uploads/2016/08/logo_horiz_redG.svg" alt="Red Sweater Project logo" />
         </a>
       </div>
       <div class="navbar-right">
@@ -30,7 +30,7 @@
 
         <a href="/donate" class="navbar-text donate">Donate</a>
         <div class="navbar-text menu-toggle">
-          <img class="subnav-toggle" src="../wordpress/wp-content/uploads/2016/08/menu_icon.svg" alt="menu icon" />
+          <img class="subnav-toggle" src="<?php bloginfo( 'url' ); ?>/wp-content/uploads/2016/08/menu_icon.svg" alt="menu icon" />
         </div>
       </div>
     </nav>
